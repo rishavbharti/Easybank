@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+// Primary Colors
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+
+// Neutral Colors
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$v-light-gray: hsl(0, 0%, 98%);
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Public Sans', 'sans-serif';
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style-type: none;
+    }
+}
+.logo
+{
+    height: 20px;
+}
+.btn
+{
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: $lime-green;
+    // background-color: linear-gradient(-225deg, $bright-cyan 20%, $lime-green 50%);
+}
+.wrapper
+{
+    padding: 3vh 10vw;
+    // display: flex;
+    // justify-content: space-between;
+}
+header
+{
+    display: flex;
+    justify-content: flex-start;
+    .logo
+    {
+        margin-right: 5%;
+    }
+}
+nav ul
+{
+    display: flex;
+    flex-flow: row wrap;
+    li
+    {
+        padding: 0 10px;
+    }
+}
+#hero-wrapper
+{
+    // display: flex;
+    // flex-wrap: wrap;
+    background-color: $v-light-gray;
+    // border: 1px solid black;
+    height: 75vh;
+    .intro
+    {
+        position: absolute;
+        max-width: 400px;
+        // border: 1px solid black;
+        margin: 8% 0;
+        h1
+        {
+            font-size: 3rem;
+            font-weight: 400;
+            margin: 15px 0;
+        }
+        p
+        {
+            font-weight: 300;
+            margin: 25px 0;
+        }
+    }
+    .intro-bg
+    {
+        position: relative;
+        // border: 2px solid darkblue;
+        overflow: hidden;
+        margin-top: -20vh;
+        z-index: 1;
+        .intro-bg-0
+        {
+            width: 50vw;
+            position: relative;
+            left: 60%;
+            // overflow: hidden;
+            // margin-top: -50px;
+        }
+        .intro-bg-1
+        {
+            width: 35vw;
+            position: absolute;
+            left: 70%;
+            // overflow: hidden;
+            // bottom: 10%;
+            // top: 20%;
+            // margin-top: -150px;
+        }
+    }
+}
+.grid-1-4
+{
+    display: flex;
+    // display: grid;
+    // grid-template-row: repeat(4, 1fr);
+    // column-gap: 2%;
+    margin: 2% 0;
+    article
+    {
+        margin: 2% 3% 2% 0;
+    }
+}
+#why-us
+{
+    background-color: $light-grayish-blue;
+    padding: 2% 0;
+    #why-us-msg
+    {
+        margin: 5% 0;
+        width: 50%;
+        h1
+        {
+            margin: 4% 0;
+        }
+    }
+    .grid-1-4 
+    {
+        h3
+        {
+            margin: 7% 0;
+        }
+        p
+        {
+            line-height: 1.5em;
+        }
+    }
+}
+#blog
+{
+    padding: 5% 0;
+    article
+    {
+        border-radius: 5px;
+        // border: 1px solid yellow;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        img
+        {
+            width: 100%;
+            margin-bottom: 5%;
+            height: 45%;
+        }
+        span, h4, p
+        {
+            padding: 6%;
+        }
+        p
+        {
+            margin-bottom: 6%;
+        }
+    }
+}
+footer
+{
+    background-color: $dark-blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    line-height: 2em;
+    color: $grayish-blue;
+    padding: 5% 0;
+    .logo
+    {
+        background-color: white;
+    }
+    a
+    {
+        color: white;
+    }
+}
+@media (max-width: 360px)
+{
+    header
+    {
+        .btn
+        {
+            // border: 1px solid black;
+            padding: 5px 20px;
+            height: 55px;
+            display: block;
+        }
+    }
+    #hero-wrapper
+    {
+        .wrapper
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .intro
+        {
+            margin: 20vh 4%;
+            // border: 1px solid blue;
+            text-align: center;
+            h1
+            {
+                font-size: 2rem;
+            }
+            p
+            {
+                font-size: 0.9em;
+                line-height: 1.5em;
+            }
+        }
+        .intro-bg
+        {
+            display: none;
+        }
+    }
+    #why-us #why-us-msg
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .grid-1-4
+    {
+        flex-direction: column;
+        article
+        {
+            text-align: center;
+            margin-bottom: 10%;
+        }
+    }
+    footer
+    {
+        display: block;
+        text-align: center;
+        color: $grayish-blue;
+        line-height: 2em;
+        a
+        {
+            color: white;
+        }
+        .btn
+        {
+            margin: 5px;
+        }
+    }
+}

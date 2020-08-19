@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Public Sans', 'sans-serif';
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style-type: none;
+}
+
+.logo {
+  height: 20px;
+}
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: #31d35c;
+}
+
+.wrapper {
+  padding: 3vh 10vw;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+header .logo {
+  margin-right: 5%;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+nav ul li {
+  padding: 0 10px;
+}
+
+#hero-wrapper {
+  background-color: #fafafa;
+  height: 75vh;
+}
+
+#hero-wrapper .intro {
+  position: absolute;
+  max-width: 400px;
+  margin: 8% 0;
+}
+
+#hero-wrapper .intro h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+#hero-wrapper .intro p {
+  font-weight: 300;
+  margin: 25px 0;
+}
+
+#hero-wrapper .intro-bg {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20vh;
+  z-index: 1;
+}
+
+#hero-wrapper .intro-bg .intro-bg-0 {
+  width: 50vw;
+  position: relative;
+  left: 60%;
+}
+
+#hero-wrapper .intro-bg .intro-bg-1 {
+  width: 35vw;
+  position: absolute;
+  left: 70%;
+}
+
+.grid-1-4 {
+  display: flex;
+  margin: 2% 0;
+}
+
+.grid-1-4 article {
+  margin: 2% 3% 2% 0;
+}
+
+#why-us {
+  background-color: #f3f4f6;
+  padding: 2% 0;
+}
+
+#why-us #why-us-msg {
+  margin: 5% 0;
+  width: 50%;
+}
+
+#why-us #why-us-msg h1 {
+  margin: 4% 0;
+}
+
+#why-us .grid-1-4 h3 {
+  margin: 7% 0;
+}
+
+#why-us .grid-1-4 p {
+  line-height: 1.5em;
+}
+
+#blog {
+  padding: 5% 0;
+}
+
+#blog article {
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#blog article img {
+  width: 100%;
+  margin-bottom: 5%;
+  height: 45%;
+}
+
+#blog article span, #blog article h4, #blog article p {
+  padding: 6%;
+}
+
+#blog article p {
+  margin-bottom: 6%;
+}
+
+footer {
+  background-color: #2d314d;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 2em;
+  color: #9698a6;
+  padding: 5% 0;
+}
+
+footer .logo {
+  background-color: white;
+}
+
+footer a {
+  color: white;
+}
+
+@media (max-width: 360px) {
+  header .btn {
+    padding: 5px 20px;
+    height: 55px;
+    display: block;
+  }
+  #hero-wrapper .wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  #hero-wrapper .intro {
+    margin: 20vh 4%;
+    text-align: center;
+  }
+  #hero-wrapper .intro h1 {
+    font-size: 2rem;
+  }
+  #hero-wrapper .intro p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+  #hero-wrapper .intro-bg {
+    display: none;
+  }
+  #why-us #why-us-msg {
+    width: 100%;
+    text-align: center;
+  }
+  .grid-1-4 {
+    flex-direction: column;
+  }
+  .grid-1-4 article {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  footer {
+    display: block;
+    text-align: center;
+    color: #9698a6;
+    line-height: 2em;
+  }
+  footer a {
+    color: white;
+  }
+  footer .btn {
+    margin: 5px;
+  }
+}
