@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Public Sans', 'sans-serif';
+  font-family: "Public Sans", "sans-serif";
 }
 
 body a {
@@ -17,7 +17,12 @@ body li {
   list-style-type: none;
 }
 
+.container {
+  padding-left: 10vh;
+}
+
 .logo {
+  margin-top: 4px;
   height: 20px;
 }
 
@@ -130,16 +135,22 @@ nav ul li {
 #blog article {
   border-radius: 5px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-size: small;
 }
 
 #blog article img {
   width: 100%;
   margin-bottom: 5%;
-  height: 45%;
+  height: 50%;
 }
-
-#blog article span, #blog article h4, #blog article p {
-  padding: 6%;
+#blog article h4 {
+  font-size: 20px;
+  padding: 2% 2% 0 2%;
+}
+#blog article span,
+#blog article p {
+  font-size: small;
+  padding: 2%;
 }
 
 #blog article p {
